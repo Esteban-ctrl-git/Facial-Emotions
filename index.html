@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detector de Emociones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Detector de Emociones</h1>
+    <p>Sube una imagen o usa tu cámara</p>
+
+    <div class="card">
+        <img id="preview" src="" alt="Vista previa">
+        <h2 id="result">Esperando imagen...</h2>
+    </div>
+
+    <div id="label-container"></div>
+
+    <div class="buttons">
+        <input type="file" id="upload" accept="image/*">
+        <button onclick="initCamera()">Usar Cámara</button>
+    </div>
+
+    <div id="webcam-container"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
